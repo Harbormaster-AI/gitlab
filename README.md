@@ -1,6 +1,6 @@
 # Harbormaster Project Generator For GitLab
 
-![alt text](http://harbormaster.ai/wp-content/uploads/2021/03/cap_blue_gold-e1616336538269.png)
+![alt text](http://harbormaster.ai/wp-content/uploads/2021/03/captain_harbormaster-e1617238219491.png)
 
 The contained GitLab configuration file (_.gitlab-ci.yml_) is a simple, yet powerful way to leverage Harbormaster and GitLab to automate the generation of an MVP-quality projects built on, tested, contained and deployed through your GitLab CI/CD pipeline.
 
@@ -32,7 +32,7 @@ The project will eventually be built and tested with results as below:
 ![alt text](http://www.realmethods.com/img/gitlab-build-results.png)
 
 
-# Step-By-Step Application Generation
+# Step-By-Step Project Generation
 
 ## Step 1 - Clone This Project
 Clone this project in one of two ways:
@@ -59,7 +59,7 @@ This YAML file contains the directives required to generate a project including:
 - Docker settings
 - and more.... 
 
-See an example [here](https://gitlab.com/Harbormaster-AI/gitlab/blob/master/samples/yamls/project.as.code/django-project-as-code.yml)
+See an example [here](https://github.com/Harbormaster-AI/gitlab/blob/main/samples/yamls/project.as.code/django-project-as-code.yml)
 
 
 `PROJECT_YAML_FILE: "samples/yamls/project.as.code/django-project-as-code.yml"`
