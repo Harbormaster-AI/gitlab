@@ -1,0 +1,10 @@
+app:
+    - techStackId:       Lambda
+      modelId:           4                                              # id or file; ignored when provided via cmd line arg
+      appOptionsFile:    ./samples/options/Lambda.options.json   # ignored when provided via cmd line arg
+      gitParams:
+         entry:          GitLab_Test_Lambda
+         file:           ./samples/git/gitlab.yml                     #ignored when provided via cmd line arg
+      saveParams:
+         name:           Lambda v0.0.1
+         description:    Lambda Test Application Generation

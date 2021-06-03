@@ -1,0 +1,15 @@
+gitParams:
+    - name:          GitLab_Test_Django
+      username:      realmethods-public
+      password:      6969Cutlass!!
+      repository:    Django
+      tag:           latest
+      host:          gitlab.com
+
+# You can have multiple sections
+#    - name:          GitLab_Test_SpringCore
+#      username:      realmethods-public
+#      password:      6969Cutlass!!
+#      repository:    SpringCore
+#      tag:           latest
+#      host:          gitlab.com

@@ -1,0 +1,10 @@
+app:
+    - techStackId:       ASPNETCore
+      modelId:           4                                                 # id or file; ignored when provided via cmd line arg
+      appOptionsFile:    ./samples/options/ASPNETCore.options.json  # ignored when provided via cmd line arg
+      gitParams:
+         entry:          GitLab_Test_ASPNETCore
+         file:           ./samples/git/gitlab.yml                        # ignored when provided via cmd line arg
+      saveParams:
+         name:           ASPNETCore v0.0.1
+         description:    ASP.NET Core Test Application Generation
