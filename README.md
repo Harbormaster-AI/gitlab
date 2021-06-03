@@ -2,7 +2,7 @@
 
 ![alt text](http://harbormaster.ai/wp-content/uploads/2021/03/captain_harbormaster-e1617238219491.png)
 
-The contained GitLab configuration file (_.gitlab-ci.yml_) is a simple, yet powerful way to leverage Harbormaster and GitLab to automate the generation of an MVP-quality projects built on, tested, contained and deployed through your GitLab CI/CD pipeline.
+The contained GitLab configuration file (_.gitlab-ci.yml_) is a simple, yet powerful way to leverage Harbormaster and GitLab to automate the generation of an MVP-quality project built on, tested, contained and deployed through your GitLab CI/CD pipeline.
 
 This repository also contains [sample Harbormaster project generation YAML files](https://gitlab.com/Harbormaster-AI/gitlab/blob/master/samples/yamls/project.as.code/).  These instructions will reference the Django project file (_django-project-as-code.yaml_)
 
@@ -42,12 +42,14 @@ Clone this project in one of two ways:
 
 ## Step 2 - Make Changes
 
-#### API_TOKEN
+#### HARBORMASTER__API__TOKEN
+It is important you register @ harbormaster.ai in order to obtain an API token.  
+Once you have this token, assign it to an environment variable named 
 
-An api_token is required to initialize a unique session with the Harbormaster SaaS back-end.  The one provided as default is safe to 
-use as a GitLab user.  However, if you prefer, assign your API token, which is available by logging into the [Harbormaster SaaS](platform.harbormaster.ai).
+`HARBORMASTER__API__TOKEN`
 
-`API_TOKEN: "CBc10800RKddRGQh"`
+Learn more about assign environment variables [here](https://docs.gitlab.com/ee/ci/variables/README.html#add-a-cicd-variable-to-an-instance)
+
 
 #### PROJECT\_YAML\_FILE:
 
@@ -65,7 +67,7 @@ See an example [here](https://github.com/Harbormaster-AI/gitlab/blob/main/sample
 `PROJECT_YAML_FILE: "samples/yamls/project.as.code/django-project-as-code.yml"`
 
 #### GitLab Credentials
-Modify the git: section of the a _PROJECT_YAML_FILE_ (e.g. django-project-as-code.yml) to assign your GitLab credentials
+Modify the git: section of the a Project-As-Code YAML file (e.g. django-project-as-code.yml) to assign your GitLab credentials
 
 ##### AWS Credentials
 Note: If using one of the AWS Lambda stacks, you will have to assign the access key and secret key as project level environment variables.  See [https://gitlab.com/help/ci/variables/README#variables](https://gitlab.com/help/ci/variables/README#variables) for more details. Be sure to name the accesskey USER\_AWS\_ACCESSKEY and name the secretkey USER\_AWS\_SECRETKEY.  Equally important, 
@@ -88,7 +90,7 @@ Upon completion of Step 5, Harbormaster will commit all generated project files 
 ![alt text](http://harbormaster.ai/wp-content/uploads/2021/04/gitlab-app-build-running-results.png)
 
 ## Congratulations!
-Using the power of GitLab and Harbormaster, you just generated, built, tested, and (optionally) contained an entire application complete with core capabilities, build file, CI/CD config, and much more....
+Using the power of GitLab and Harbormaster you just generated, built, tested, and (optionally) contained an entire application complete with core capabilities, build file, CI/CD config, and much more....
 
 Best of luck in completing the application!
 
