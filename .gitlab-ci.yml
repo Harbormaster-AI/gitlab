@@ -1,15 +1,22 @@
 image: node:8
   
-variables:
-# use this api-token or register for your own at www.realmethods.com
-    API_TOKEN: "CBc10800RKddRGQh"                
-   
-# each of the following paths are relative to the root of this repository
-# each file is used as an example for you to review and modify as needed
+variables:               
+# ----------------------------------------------------------------------------------    
+# It is important you register @ harbormaster.ai in order to obtain an API token.  
+# Once you have this token, assign it to an environment variable named 
+#
+# HARBORMASTER_API_TOKEN
+#
+# Learn more about assign environment variables at:
+#
+# https://docs.gitlab.com/ee/ci/variables/README.html#add-a-cicd-variable-to-an-instance
+# ----------------------------------------------------------------------------------
 
-# project generation directives : 
+# ----------------------------------------------------------------------------------
+# project generation YAML file containing the generation directives 
+# ----------------------------------------------------------------------------------
     PROJECT_YAML_FILE: "samples/project-as-code/django-project-as-code.yml" 
-      
+
 stages:
   - generate
 
@@ -17,7 +24,7 @@ before_script:
     - echo "installing Harbormaster Command Line Interface..."
     - npm install -g harbormaster_ai
     - echo "initializing Harbormaster CLI with provided api-token..."
-    - harbormaster_ai init $API_TOKEN
+    - harbormaster_ai init $HARBORMASTER_API_TOKEN
 
 build:
   stage: generate
