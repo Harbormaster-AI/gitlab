@@ -1,10 +1,8 @@
 # Harbormaster Project Generator For GitLab
 
-![alt text](http://harbormaster.ai/wp-content/uploads/2021/03/captain_harbormaster-e1617238219491.png)
-
 The contained GitLab configuration file (_.gitlab-ci.yml_) is a simple, yet powerful way to leverage Harbormaster and GitLab to automate the generation of an MVP-quality project built on, tested, contained and deployed through your GitLab CI/CD pipeline.
 
-This repository also contains [sample Harbormaster project generation YAML files](https://gitlab.com/Harbormaster-AI/gitlab/blob/master/samples/yamls/project.as.code/).  These instructions will reference the Django project file (_django-project-as-code.yaml_)
+This repository also contains [sample Harbormaster project generation YAML files](https://github.com/Harbormaster-AI/gitlab/tree/main/samples/yamls/project.as.code).  These instructions will reference the Django project file (_django-project-as-code.yaml_)
 
 To take a quick test drive, follow the instructions in the *Quick Start* section or skip to the _Step-By-Step_ section to generate an application using more customized inputs.
 
@@ -14,10 +12,10 @@ Use this section to make the least amount of changes to see Harbormaster project
 
 1.) Git Clone this project in one of two ways:
 
-` SSH - git@gitlab.com:Harbormaster-AI/gitlab.git`
-` HTTPS - https://gitlab.com/Harbormaster-AI/gitlab.git`
+` SSH - git@github.com:Harbormaster-AI/gitlab.git`
+` HTTPS - https://github.com/Harbormaster-AI/gitlab.git`
 
-2.) Edit the _git_ section of `/samples/yamls/project.as.code/django-project-as-code.yml` to set your GitLab username and password.
+2.) Edit the _git_ section of `/samples/yamls/project.as.code/django-project-as-code.yml` to set your GitLab username and password.  Leave the password blank if you assigned a Person Token and applied it to your account at platform.harbormaster.ai
 
 3.) Create a GitLab repository by the name of _django_repo_.
 
@@ -37,8 +35,8 @@ The project will eventually be built and tested with results as below:
 ## Step 1 - Clone This Project
 Clone this project in one of two ways:
 
-` SSH - git@gitlab.com:Harbormaster-AI/gitlab.git`
-` HTTPS - https://gitlab.com/Harbormaster-AI/gitlab.git`
+` SSH - git@github.com:Harbormaster-AI/gitlab.git`
+` HTTPS - https://github.com/Harbormaster-AI/gitlab.git`
 
 ## Step 2 - Make Changes
 
