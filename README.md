@@ -1,4 +1,4 @@
-# Harbormaster Project Generator For GitLab
+# Harbormaster Project Acceleration For GitLab
 
 The contained GitLab configuration file (_.gitlab-ci.yml_) is a simple, yet powerful way to leverage Harbormaster and GitLab to automate the generation of an MVP-quality project built on, tested, contained and deployed through your GitLab CI/CD pipeline.
 
